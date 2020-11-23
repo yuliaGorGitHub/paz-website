@@ -20,8 +20,11 @@ main {
 	justify-content: space-between;
 	width: 900px;
 	height: 589px;
+	/* height: 3000px; */
 	margin: 0 auto;
 	margin-top: 30px;
+	/* background-color: rgb(153, 0, 255); */
+
 }
 
 
@@ -30,6 +33,7 @@ main {
 	flex-wrap: wrap;
 	height: 355px;
 	justify-content: space-between;
+	/* background-color: blue; */
 }
 
 
@@ -39,6 +43,8 @@ main {
 	justify-content: flex-end;
 	align-content: space-around;
 	width: 293px;
+	/* background-color: rgb(255, 0, 200); */
+	/* border: 1px solid black; */
 	text-align: right;
 	border-bottom-right-radius: 25px;
 }
@@ -46,16 +52,38 @@ main {
 .content {
 	width: 248px;
     height: 97px;
+	/* background-color: #868989; */
 	background: rgba(135, 137, 138, 0.85);
 	color: white;
 	padding: 10px;
-	margin-right: 7px;
-	margin-bottom: 6px;
+	margin-right: 6px;
+	margin-bottom: 5px;
 	border-bottom-right-radius: 25px;
 }
 
 .row:last-child {
 	height: 216px;
+}
+
+.row:last-child .col{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-top-right-radius: 25px;
+	background-image: linear-gradient(rgb(210, 210, 210), rgb(245, 245, 245) );
+	padding: 1px;
+}
+
+.row:last-child .content {
+	width: 100%;
+    height: 100%;
+	color: #575757;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 25px;
+	background-image: linear-gradient(white, rgb(235, 235, 235));
+
+	margin-right: 0;
+	margin-bottom: 0;
 }
 
 .content a { 
@@ -69,6 +97,11 @@ main {
 }
 
 
+.row:last-child .content a {
+	color: black;
+}
+
+
 .content a:hover{
 	color: rgb(0, 92, 160);
 	background: url("images/read_more_blue.png") no-repeat;
@@ -78,6 +111,10 @@ main {
 a > span {
     text-decoration: none;
 	display: inline-block;
+}
+
+.row:last-child .content a > span {
+	color: rgb(243, 201, 17);
 }
 
 .content > p {
@@ -103,6 +140,9 @@ text-align: left;
 	background-image: url('images/פזקר_-291_354410564000.JPG'); 
 	background-repeat: no-repeat;
 }
+
+
+
 
 header {
 	height:105px;
