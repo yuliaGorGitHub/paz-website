@@ -32,7 +32,6 @@ main {
 	justify-content: space-between;
 }
 
-
 .col {
 	display: flex;
 	flex-direction: column;
@@ -93,6 +92,7 @@ main {
 	padding-bottom: 10px;
     border-bottom: 1px solid rgb(235, 235, 235);
 }
+
 .content a { 
 	display: inline-block;
 	width: 53px;
