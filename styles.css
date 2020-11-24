@@ -20,10 +20,10 @@ main {
 	justify-content: space-between;
 	width: 900px;
 	height: 589px;
+	/* height: 3000px; */
 	margin: 0 auto;
 	margin-top: 30px;
 }
-
 
 .row {
 	display: flex;
@@ -46,7 +46,7 @@ main {
 .content {
 	width: 248px;
     height: 97px;
-	background: rgba(135, 137, 138, 0.85);
+	background: rgba(139, 139, 139, 0.85);
 	color: white;
 	padding: 10px;
 	margin-right: 7px;
@@ -58,26 +58,60 @@ main {
 	height: 216px;
 }
 
+.content .row {
+	height: 100%;
+}
+
+
+.row:last-child .col{
+	border-top-right-radius: 25px;
+	background-image: linear-gradient(rgb(210, 210, 210), rgb(245, 245, 245) );
+	padding: 1px;
+}
+
+.row:last-child .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+    height: 100%;
+	color: #575757;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 25px;
+	background-image: linear-gradient(white, rgb(235, 235, 235));
+	padding: 10px 20px 10px 20px;
+
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.row:last-child .col:last-child .content {
+	justify-content: flex-start;
+}
+
+.row:last-child .content h3 {
+	padding-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
 .content a { 
 	display: inline-block;
 	width: 53px;
 	text-align: right;
 	color: white;
 	padding-bottom: 10px;
-	background-image:  url("images/read_more_white.png");
-	background-repeat: no-repeat;
+	background:  url("images/read_more_white.png") no-repeat;
 }
 
 
-.content a:hover{
-	color: rgb(0, 92, 160);
-	background: url("images/read_more_blue.png") no-repeat;
+.row:last-child .content a {
+	color: #575757;
+	width: 85px;
+	background:  url("images/read_more_yellow.png") no-repeat;
 }
 
-
-a > span {
-    text-decoration: none;
-	display: inline-block;
+.content a:hover {
+	color: rgb(0, 92, 160) !important;
+	background: url("images/read_more_blue.png") no-repeat!important;
 }
 
 .content > p {
@@ -85,23 +119,51 @@ a > span {
     margin-top: 4px;
 }
 
-.content > div{
-text-align: left;
+.content > div:last-child {
+	text-align: left;
 }
 
 .retail {
-	background-image: url('images/1908364606615453350.JPG'); 
-	background-repeat: no-repeat;
+	background: url('images/1908364606615453350.JPG') no-repeat; 
 }
 
 .refining {
-	background-image: url('images/Picture-046410251500.JPG'); 
-	background-repeat: no-repeat;
+	background: url('images/Picture-046410251500.JPG') no-repeat; 
 }
 
 .industries {
-	background-image: url('images/פזקר_-291_354410564000.JPG'); 
-	background-repeat: no-repeat;
+	background: url('images/פזקר_-291_354410564000.JPG') no-repeat; 
+}
+
+h3 + div{
+	width: 250px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+.cred-card {
+	background: url('images/paz_250x110059890678.jpg') no-repeat; 
+
+}
+
+.cl-pi {
+	background: url('images/250X110571325734.jpg') no-repeat; 
+
+}
+
+.map {
+	background: url('images/map-transparent.png') no-repeat;
+	width: 73px;
+	height: 168px;
+}
+
+nav > ul {
+	list-style: none;
+	margin-top: 20px;
+}
+
+.row:last-child .content nav > ul > li > a { 
+	width: 37px;
 }
 
 header {
