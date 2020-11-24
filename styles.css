@@ -61,7 +61,6 @@ main {
 	height: 100%;
 }
 
-
 .row:last-child .col{
 	border-top-right-radius: 25px;
 	background-image: linear-gradient(rgb(210, 210, 210), rgb(245, 245, 245) );
@@ -93,6 +92,11 @@ main {
     border-bottom: 1px solid rgb(235, 235, 235);
 }
 
+
+ul {
+	list-style: none;
+}
+
 .content a { 
 	display: inline-block;
 	width: 53px;
@@ -110,7 +114,7 @@ main {
 }
 
 .content a:hover {
-	color: rgb(0, 92, 160) !important;
+	color: rgb(0, 92, 160) !important; 
 	background: url("images/read_more_blue.png") no-repeat!important;
 }
 
@@ -157,8 +161,7 @@ h3 + div{
 	height: 168px;
 }
 
-nav > ul {
-	list-style: none;
+.row nav > ul {
 	margin-top: 20px;
 }
 
@@ -166,11 +169,140 @@ nav > ul {
 	width: 37px;
 }
 
+/* HAEDER */
+
 header {
 	height:105px;
-	background-color: rgb(123, 255, 0);
+	background-image: linear-gradient(rgb(144, 144, 144) 85%, rgb(180, 180, 180) );
 }
 
+.container {
+	position: relative;
+	width: 900px;
+	height:105px;
+	margin: 0 auto;
+}
+
+.container .col {
+	position: absolute;;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	top: 15%
+}
+
+.logo {
+	display: block;
+	position: absolute;;
+	width: 142px;
+	height: 93px;
+	background: url('images/paz_logo.png') no-repeat;
+	top: 30px;
+}
+
+.search {
+	display: flex;
+	height: 19px;
+	width: 152px;
+}
+
+.setxt {
+	width: 132px;
+	height: 100%;
+	border: none;
+	border-top-right-radius: 7px;
+}
+
+.sebtn {
+	background: url('images/search_button.png') no-repeat;
+	width: 19px;
+	height: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.left {
+	display: flex;	
+	justify-content: space-between;
+	align-items: baseline;
+	width: 220px;
+}	
+
+.container .col a { 
+	display: inline-block;
+	background-image: none;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1.1em;;
+}
+
+header nav {
+	width: 82%;
+}
+
+header nav > ul {
+	display: flex;
+	padding: 0;
+}
+
+
+.container .col nav > ul > li:first-child > a { 
+	width: 17px;
+	height: 21px;
+	background: url('images/menu_home_blue.png') no-repeat;
+}
+
+.container .col nav > ul > li.sep {
+    width: 4px;
+    height: 21px;
+    background: url(images/menu_sep.png) no-repeat 0 0px;
+    margin: 0 16px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	background-color: rgb(144, 144, 144);
+	position: absolute;
+	display: none;
+	top: 22px;
+}
+
+
+.dropdown-content > li > a {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+}
+
+
+.dropdown-content > li:first-child {
+	background-image: linear-gradient( rgb(170, 170, 170), rgb(144, 144, 144) );
+	padding-top: 15px;
+}
+
+.dropdown-content > li {
+	border-bottom: 1px solid rgb(171, 171, 171);
+	width: auto;
+	white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+.container a:hover {
+	color: rgb(0, 92, 160);
+}
+
+/* FOOTER */
 footer {
 	position: fixed;
 	width: 100%;
@@ -178,3 +310,4 @@ footer {
 	background-color: rgb(0, 255, 191);
 	bottom: 0;
 }
+
