@@ -120,9 +120,14 @@ main .row:last-child .content a {
 	background:  url("images/read_more_yellow.png") no-repeat;
 }
 
-.content a:hover {
-	color: rgb(0, 92, 160) !important; 
-	background: url("images/read_more_blue.png") no-repeat!important;
+main .content a:hover {
+	background: url("images/read_more_blue.png") no-repeat;
+}
+
+
+main .row:last-child .content a:hover {
+	color: rgb(0, 92, 160); 
+	background: url("images/read_more_blue.png") no-repeat;
 }
 
 .content > p {
@@ -154,12 +159,10 @@ h3 + div{
 
 .cred-card {
 	background: url('images/paz_250x110059890678.jpg') no-repeat; 
-
 }
 
 .cl-pi {
 	background: url('images/250X110571325734.jpg') no-repeat; 
-
 }
 
 .map {
@@ -305,7 +308,12 @@ header nav {
 	display: block;
 }
 
-.container a:hover {
+.cube a {
+	color: blue;
+	white-space: nowrap;
+}
+
+ a:hover {
 	color: rgb(0, 92, 160);
 	text-decoration: underline;
 }
@@ -347,6 +355,10 @@ footer ul > li:last-child > a {
 	color: red;
 }
 
+footer ul > li:last-child > a:hover { 
+	color: rgb(0, 92, 160);
+}
+
 /* CONTACT */
 .contact {
 	display: flex;
@@ -362,11 +374,11 @@ footer ul > li:last-child > a {
 	height: 426px;	
 }
 
-.cube a {
+.contact a {
 	text-decoration: none;
 }
 
-.cube.sidebar {
+.sidebar {
 	width: 122px;
 	height: 36px;	
 	background-image: linear-gradient( rgb(254, 254, 254) 50%, rgb(200, 200, 200) );
@@ -374,11 +386,11 @@ footer ul > li:last-child > a {
 
 }
 
-.cube.sidebar li {
+.sidebar li {
 	display: flex;
 }
 
-.cube.sidebar a {
+.sidebar a {
 	display: inline-block;
 	width: 100%;
 	padding: 10px;
@@ -419,11 +431,6 @@ footer ul > li:last-child > a {
 	height: 160px;
 }
 
-.cube.left a {
-	color: blue;
-	width: auto;
-	white-space: nowrap;
-}
 
 .cube.center > .col > .content > .caption {
     display: block;
