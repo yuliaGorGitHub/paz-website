@@ -21,7 +21,7 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#"></a></li>
+                            <li><a class="home-pic" href="#"></a></li>
                             <li class="sep"></li>
                             <li class="dropdown"><a href="#">אודות</a>
                                 <ul class="dropdown-content">                      
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="sidebar">
                     <ul>
-                        <li><a href="#" >צור קשר</a></li>
+                        <li><a href="#" >&#11164;   צור קשר</a></li>
                     </ul>
                 </div>  
 
@@ -119,24 +119,25 @@
                             <span class="caption">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
                             <span>* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
                             <div class="fields">
+                                
                                 <div>
-                                    <label for="fname"><span class="requred">*</span>&nbsp;שם פרטי</label>
-                                    <input name="fname" type="text" requred>
+                                    <label for="fname"><span>*&nbsp;שם פרטי</span></label>
+                                    <input name="fname" type="text" required/><span class="error">שדה חובה</span>
                                 </div> 
                                 <div>
-                                    <label for="lname"><span class="requred">*</span>&nbsp;שם משפחה</label>
-                                    <input name="lname" type="text" requred>
+                                    <label for="lname"><span>*&nbsp;שם משפחה</span></label>
+                                    <input name="lname" type="text" required/><span class="error">שדה חובה</span>
                                 </div> 
                                 <div>
-                                    <label for="phone"><span class="requred">*</span>&nbsp;טלפון</label>
-                                    <input name="phone" type="text">
+                                    <label for="phone"><span>*&nbsp;טלפון</span></label>
+                                    <input name="phone" type="tel" required><span class="error">שדה חובה</span>
                                 </div> 
                                 <div>
-                                    <label for="email">*</span>&nbsp;E-mail</label>
-                                    <input name="email" type="text" class="inputtextyellow">
+                                    <label for="email"><span>*&nbsp;E-mail</span></label>
+                                    <input name="email" type="email" required><span class="error">שדה חובה</span>
                                 </div> 
                                 <div>
-                                    <textarea name="content" rows="7" cols="32" placeholder=" תוכן הפנייה "></textarea>
+                                    <textarea name="content" rows="7" cols="32" maxlength="50"  placeholder=" תוכן הפנייה "></textarea>
                                 </div> 
                                 <div>
                                     <a class="button" href="">שלח </a>

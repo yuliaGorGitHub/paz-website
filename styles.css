@@ -268,6 +268,12 @@ header nav {
 	background: url('images/menu_home_blue.png') no-repeat;
 }
 
+
+.container .col nav > ul > li:first-child > a.home-pic { 
+	background: url('images/menu_home.png') no-repeat;
+}
+
+
 .container .col nav > ul > li.sep {
     width: 4px;
     height: 21px;
@@ -381,7 +387,7 @@ footer ul > li:last-child > a:hover {
 .sidebar {
 	width: 122px;
 	height: 36px;	
-	background-image: linear-gradient( rgb(254, 254, 254) 50%, rgb(200, 200, 200) );
+	background-image: linear-gradient( rgb(254, 254, 254), rgb(200, 200, 200));
 	border-top: 1px solid rgb(210, 210, 210);
 
 }
@@ -393,7 +399,7 @@ footer ul > li:last-child > a:hover {
 .sidebar a {
 	display: inline-block;
 	width: 100%;
-	padding: 10px;
+	padding: 10px 0;
 	text-align: right;
 }
 
@@ -443,7 +449,7 @@ footer ul > li:last-child > a:hover {
 
 .fields {
 	width: 255px;
-	height: 250px;
+	height: 260px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -458,7 +464,7 @@ footer ul > li:last-child > a:hover {
 }
 
 .fields input[type="text"] {
-	width: 160px;
+	width: 175px;
     padding: 3px;
 }
 
@@ -492,3 +498,11 @@ footer ul > li:last-child > a:hover {
 	color: rgb(0, 92, 160);
 }
 
+.error {
+	color: red;
+	display: none;
+}
+/* 
+input:invalid + .error{
+	display :initial;
+} */
