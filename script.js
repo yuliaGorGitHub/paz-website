@@ -1,8 +1,8 @@
 
 //  Array of Images
-var backgroundImg=[ "images//250X110668568400.JPG",
-					"images//banner_atar.JPG",
-					"images//paz_250x110103131473.JPG",
+var backgroundImg=[ "images//250X110668568400.jpg",
+					"images//banner_atar.jpg",
+					"images//paz_250x110103131473.jpg",
 					"images/250X110571325734.jpg"];
 
 var element = document.getElementById('cl-pi');
